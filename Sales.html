@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ProHealth</title>
+</head>
+<body>
+<div>
+    <link rel="stylesheet" type="text/css" href="project.css">
+    <h1 style="font-size: 3em; color: rgb(0, 0, 255); text-decoration: double underline overline 3px rgb(0, 0, 255);">Pro Health</h1>
+    <div class="dropdown" style="display: inline;">
+            <li style=" background-color: darkblue;border: 3px solid black; list-style-type: none; padding-bottom: 4px;"><a href="Mainpage.html">Home</a></li>
+    </div>
+
+    <div class="dropdown" style="display: inline;">
+        <li style=" background-color: darkblue;border: 3px solid black; list-style-type: none; padding-bottom: 4px;"><a href="login.html">Sign Up/Log in</a></li> 
+    </div>
+
+    <div class="dropdown" style="display: inline;">
+            <li style=" background-color: darkblue;border: 3px solid black; list-style-type: none; padding-bottom: 4px;"><a href="OurGym.html">Our Gym</a></li>
+    </div>
+    
+    <div class="dropdown" style="margin: 0px -4px 0px 0px;">
+        <button class="dropbtn">Supplements</button>
+        <div class="dropdown-content">
+          <a href="Newsup.html">New Supplements</a>
+          <a href="Mostpop.html">Popular Choice</a>
+          <a href="Sales.html">Sales</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Gym Equipment</button>
+        <div class="dropdown-content">
+          <a href="Machines.html">Machines</a>
+          <a href="Freeweight.html">Free Weights</a>
+          <a href="Racks.html">Racks</a>
+        </div>
+      </div>
+</div> 
+<br><Br> 
+<div class="pos">
+<img src="mass.jpg" width="223px" height="233" class="img">
+<p class="supp">Mass Gainer<br><br> Price: <del>$43</del> <b>$33</b> <br><br> Mass Gaineris rich in carbohydrats, contains High-Quality Whey Protein, is rich in Fiber, has a blend of Minerals & Vitamins and aids in muscle recovery and growth.<br><br>
+<input id="addcart" type="button" onclick="addtocart()" value="Add To Cart" style="background-color: darkblue; color: white; border: 3px solid black; padding: 10px; margin: 5px;"></p>
+<br><br>
+<div class="pos">
+<img src="bcaa.jpg" width="223px" height="233px" class="img">
+<p class="supp" style="margin-bottom: 55px;">BCAA:<br><br>Price: <del>$25</del> <B>$18</B><br><br>BCAA's help build muscle, decrease muscle fatigue, and alleviate muscle soreness.<br><br><input id="addcart" type="button" onclick="addtocart()" value="Add To Cart" style="background-color: darkblue; color: white; border: 3px solid black; padding: 10px; margin: 5px;"></p>
+<div class="pos">
+<img src="multiv.jpg" width="223px" height="280px" class="img">
+<p class="supp">Multi-Vitamins<br><br>Price: <del>$15</del> <b>$10</b><br><br>Multi-Vitamins Improve and Maintain Muscle Mass, give you an energy boost, Lower anxiety levels and is an immunity booster.<br><br><input id="addcart" type="button" onclick="addtocart()" value="Add To Cart" style="background-color: darkblue; color: white; border: 3px solid black; padding: 10px; margin: 5px;"></p><br><a href="BUY.html"><span style="background-color: darkblue; color: white; border: 3px solid black; padding: 10px; margin: 5px;">Continue to Checkout</span></a>
+</div>
+</div>
+</div>
+<h1 id="main-heading">Added to Cart</h1>
+<script>
+  function addtocart(){
+    alert(document.getElementById("main-heading").innerHTML);
+  }
+</script>
+</body>
+</html>

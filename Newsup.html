@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ProHealth</title>
+</head>
+<body>
+<div>
+    <link rel="stylesheet" type="text/css" href="project.css">
+    <h1 style="font-size: 3em; color: rgb(0, 0, 255); text-decoration: double underline overline 3px rgb(0, 0, 255);">Pro Health</h1>
+    <div class="dropdown" style="display: inline;">
+            <li style=" background-color: darkblue;border: 3px solid black; list-style-type: none; padding-bottom: 4px;"><a href="Mainpage.html">Home</a></li>
+    </div>
+
+    <div class="dropdown" style="display: inline;">
+        <li style=" background-color: darkblue;border: 3px solid black; list-style-type: none; padding-bottom: 4px;"><a href="login.html">Sign Up/Log in</a></li> 
+    </div>
+
+    <div class="dropdown" style="display: inline;">
+            <li style=" background-color: darkblue;border: 3px solid black; list-style-type: none; padding-bottom: 4px;"><a href="OurGym.html">Our Gym</a></li>
+    </div>
+    
+    <div class="dropdown" style="margin: 0px -4px 0px 0px;">
+        <button class="dropbtn">Supplements</button>
+        <div class="dropdown-content">
+          <a href="Newsup.html">New Supplements</a>
+          <a href="Mostpop.html">Popular Choice</a>
+          <a href="Sales.html">Sales</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Gym Equipment</button>
+        <div class="dropdown-content">
+          <a href="Machines.html">Machines</a>
+          <a href="Freeweight.html">Free Weights</a>
+          <a href="Racks.html">Racks</a>
+        </div>
+      </div>
+</div> 
+<br><Br> 
+<div class="pos">
+<img src="go2.jpg" width="220px" height="255" class="img">
+<p class="supp">G02 Max:<br><br> Price: $15 <br><br> GO2 Max supports muscle strength and power, enabling you to lift heavier weights and perform better in strength-based activities. Improved focus and mental clarity: Go2 Max Supplement contains ingredients that promote mental alertness and focus, helping you stay in the zone during workouts.<br><br>
+<input id="addcart" type="button" onclick="addtocart()" value="Add To Cart" style="background-color: darkblue; color: white; border: 3px solid black; padding: 10px; margin: 5px;"></p>
+<br><br>
+<div class="pos">
+<img src="collagen.jpg" width="220px" height="255px" class="img">
+<p class="supp">Collagen Protein:<br><br>Price: $20<br><br>Collagen is key for strong healthy joints, taking a collagen supplement to increase the body's creation of new collagen can help to maximize production.<br><br><input id="addcart" type="button" onclick="addtocart()" value="Add To Cart" style="background-color: darkblue; color: white; border: 3px solid black; padding: 10px; margin: 5px;"></p>
+<div class="pos">
+<img src="glutamine.jpg" width="220px" height="255px" class="img">
+<p class="supp">glutamine:<br><br>Price: $25<br><br>Glutamine helps reduce fatigue and improve exercise recovery.<br><br><br><input id="addcart" type="button" onclick="addtocart()" value="Add To Cart" style="background-color: darkblue; color: white; border: 3px solid black; padding: 10px; margin: 5px;"></p><br><a href="BUY.html"><span style="background-color: darkblue; color: white; border: 3px solid black; padding: 10px; margin: 5px;">Continue to Checkout</span></a>
+</div>
+</div>
+</div>
+<h1 id="main-heading">Added to Cart</h1>
+<script>
+  function addtocart(){
+    alert(document.getElementById("main-heading").innerHTML);
+}
+</script>
+</body>
+</html>

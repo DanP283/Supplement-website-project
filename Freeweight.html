@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ProHealth</title>
+</head>
+<body>
+<div>
+    <link rel="stylesheet" type="text/css" href="project.css">
+    <h1 style="font-size: 3em; color: rgb(0, 0, 255); text-decoration: double underline overline 3px rgb(0, 0, 255);">Pro Health</h1>
+    <div class="dropdown" style="display: inline;">
+            <li style=" background-color: darkblue;border: 3px solid black; list-style-type: none; padding-bottom: 4px;"><a href="Mainpage.html">Home</a></li>
+    </div>
+
+    <div class="dropdown" style="display: inline;">
+        <li style=" background-color: darkblue;border: 3px solid black; list-style-type: none; padding-bottom: 4px;"><a href="login.html">Sign Up/Log in</a></li> 
+    </div>
+
+    <div class="dropdown" style="display: inline;">
+            <li style=" background-color: darkblue;border: 3px solid black; list-style-type: none; padding-bottom: 4px;"><a href="OurGym.html">Our Gym</a></li>
+    </div>
+    
+    <div class="dropdown" style="margin: 0px -4px 0px 0px;">
+        <button class="dropbtn">Supplements</button>
+        <div class="dropdown-content">
+          <a href="Newsup.html">New Supplements</a>
+          <a href="Mostpop.html">Popular Choice</a>
+          <a href="Sales.html">Sales</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Gym Equipment</button>
+        <div class="dropdown-content">
+          <a href="Machines.html">Machines</a>
+          <a href="Freeweight.html">Free Weights</a>
+          <a href="Racks.html">Racks</a>
+        </div>
+      </div>
+</div> 
+<br><Br> 
+<div class="pos">
+<img src="plate.jpg" width="300px" height="353px" class="img">
+<p class="supp">Weight Plates:<br><br> Price: 1.25Kg plate | $4.3<br> 2.5Kg plate | $8.75<br> 5Kg plate | $17.5<br> 10Kg plate | $35<br> 15Kg plate | $52.5<br> 20Kg plate | $70<br> 25Kg plate | $87.5<br><br>These platers are for Olympic style bars.<br><br>
+  <input id="addcart" type="button" onclick="addtocart()" value="Add To Cart" style="background-color: darkblue; color: white; border: 3px solid black; padding: 10px; margin: 5px;"></p>
+<br><br>
+<div class="pos">
+<img src="adjdumb.jpg" width="300px" height="353px" class="img">
+<p class="supp" style="margin-bottom: 55px;">Adjustable Dumbbells Set:<br><br>Price: $350<br><br>These solid, easy to use dumbbells have a sleek, compact design to help you save precious floor space and they can replace 9 pairs of dumbbells. The weight of these dumbbells range from 4.5 to 22.5Kg.<br><br><br><br><br><input id="addcart" type="button" onclick="addtocart()" value="Add To Cart" style="background-color: darkblue; color: white; border: 3px solid black; padding: 10px; margin: 5px;"></p>
+<div class="pos">
+<img src="olybar.jpg" width="300px" height="353px" class="img">
+<p class="supp">Olympic Style Barbell:<br><br>Price: $300 <br><br>This Olympic style barbell weighs 20Kgs can safely hold 320Kgs  without bending.<br><br><br><br><br><br><input id="addcart" type="button" onclick="addtocart()" value="Add To Cart" style="background-color: darkblue; color: white; border: 3px solid black; padding: 10px; margin: 5px;"></p><br><a href="BUY.html"><span style="background-color: darkblue; color: white; border: 3px solid black; padding: 10px; margin: 5px;">Continue to Checkout</span></a>
+</div>
+</div>
+</div>
+<h1 id="main-heading">Added to Cart</h1>
+<script>
+  function addtocart(){
+    alert(document.getElementById("main-heading").innerHTML);
+  }
+</script>
+</body>
+</html>

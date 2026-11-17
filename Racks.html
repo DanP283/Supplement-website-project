@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ProHealth</title>
+</head>
+<body>
+<div>
+    <link rel="stylesheet" type="text/css" href="project.css">
+    <h1 style="font-size: 3em; color: rgb(0, 0, 255); text-decoration: double underline overline 3px rgb(0, 0, 255);">Pro Health</h1>
+    <div class="dropdown" style="display: inline;">
+            <li style=" background-color: darkblue;border: 3px solid black; list-style-type: none; padding-bottom: 4px;"><a href="Mainpage.html">Home</a></li>
+    </div>
+
+    <div class="dropdown" style="display: inline;">
+        <li style=" background-color: darkblue;border: 3px solid black; list-style-type: none; padding-bottom: 4px;"><a href="login.html">Sign Up/Log in</a></li> 
+    </div>
+
+    <div class="dropdown" style="display: inline;">
+            <li style=" background-color: darkblue;border: 3px solid black; list-style-type: none; padding-bottom: 4px;"><a href="OurGym.html">Our Gym</a></li>
+    </div>
+    
+    <div class="dropdown" style="margin: 0px -4px 0px 0px;">
+        <button class="dropbtn">Supplements</button>
+        <div class="dropdown-content">
+          <a href="Newsup.html">New Supplements</a>
+          <a href="Mostpop.html">Popular Choice</a>
+          <a href="Sales.html">Sales</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Gym Equipment</button>
+        <div class="dropdown-content">
+          <a href="Machines.html">Machines</a>
+          <a href="Freeweight.html">Free Weights</a>
+          <a href="Racks.html">Racks</a>
+        </div>
+      </div>
+</div> 
+<br><Br> 
+<div class="pos">
+<img src="squatrack.jpg" width="300px" height="353px" class="img">
+<p class="supp">Squad Rack<br><br> Price: $700<br><br>This Squad Rack is made of premium material to ensure the quality and safety of using it. The Squad Rack safety handles have a maximum weight cap of 500Kgs.<br><Br><Br><br><br><br><br>
+  <input id="addcart" type="button" onclick="addtocart()" value="Add To Cart" style="background-color: darkblue; color: white; border: 3px solid black; padding: 10px; margin: 5px;"></p></p>
+<br><br>
+<div class="pos">
+<img src="dumrack.jpg" width="300px" height="353px" class="img">
+<p class="supp" style="margin-bottom: 55px;">Dumbbell Rack:<br><br>Price: $600<br><br>The Dumbbell Rack holds  sets of dumbells ranging from 2.5Kg to 45Kg dumbbells. Its built from high quality metal to ensure the safety of the Rack.<br><br><Br><br><br><br><input id="addcart" type="button" onclick="addtocart()" value="Add To Cart" style="background-color: darkblue; color: white; border: 3px solid black; padding: 10px; margin: 5px;"></p></p>
+<div class="pos">
+<img src="bumperrack.jpg" width="300px" height="353px" class="img">
+<p class="supp">Bumper Plate Rack:<br><br>Price: $300 <br><br>The Bumper Plate Rack offers a load tollerance of over 300Kgs.<br><br><br><Br><br><Br><br><input id="addcart" type="button" onclick="addtocart()" value="Add To Cart" style="background-color: darkblue; color: white; border: 3px solid black; padding: 10px; margin: 5px;"></p><br><a href="BUY.html"><span style="background-color: darkblue; color: white; border: 3px solid black; padding: 10px; margin: 5px;">Continue to Checkout</span></a>
+</div>
+</div>
+</div>
+<h1 id="main-heading">Added to Cart</h1>
+<script>
+  function addtocart(){
+    alert(document.getElementById("main-heading").innerHTML);
+  }
+</script>
+</body>
+</html>

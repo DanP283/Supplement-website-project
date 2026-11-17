@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ProHealth</title>
+</head>
+<body>
+<div>
+    <link rel="stylesheet" type="text/css" href="project.css">
+    <h1 style="font-size: 3em; color: rgb(0, 0, 255); text-decoration: double underline overline 3px rgb(0, 0, 255);">Pro Health</h1>
+    <div class="dropdown" style="display: inline;">
+            <li style=" background-color: darkblue;border: 3px solid black; list-style-type: none; padding-bottom: 4px;"><a href="Mainpage.html">Home</a></li>
+    </div>
+
+    <div class="dropdown" style="display: inline;">
+        <li style=" background-color: darkblue;border: 3px solid black; list-style-type: none; padding-bottom: 4px;"><a href="login.html">Sign Up/Log in</a></li> 
+    </div>
+
+    <div class="dropdown" style="display: inline;">
+            <li style=" background-color: darkblue;border: 3px solid black; list-style-type: none; padding-bottom: 4px;"><a href="OurGym.html">Our Gym</a></li>
+    </div>
+    
+    <div class="dropdown" style="margin: 0px -4px 0px 0px;">
+        <button class="dropbtn">Supplements</button>
+        <div class="dropdown-content">
+          <a href="Newsup.html">New Supplements</a>
+          <a href="Mostpop.html">Popular Choice</a>
+          <a href="Sales.html">Sales</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Gym Equipment</button>
+        <div class="dropdown-content">
+          <a href="Machines.html">Machines</a>
+          <a href="Freeweight.html">Free Weights</a>
+          <a href="Racks.html">Racks</a>
+        </div>
+      </div>
+</div> 
+<br><Br> 
+<div class="pos">
+<img src="whey.jpg" width="223px" height="233" class="img">
+<p class="supp">Whey Protein:<br><br> Price: $50 <br><br> Whey Protein boost muscle protein synthesis and the growth of lean<br> muscle mass, it can also help with weight loss and cholesterol<br><br>
+<input id="addcart" type="button" onclick="addtocart()" value="Add To Cart" style="background-color: darkblue; color: white; border: 3px solid black; padding: 10px; margin: 5px;"></p>
+<br><br>
+<div class="pos">
+<img src="Cretine.jpg" width="223px" height="255px" class="img">
+<p class="supp">Creatine Monohydrate:<br><br>Price: $35<br><br>Creatine Monohydrate helps improve exercise performance, helps with recovery, icreases muscle mass and helps to reduce dehydration and cramping.<br><br><input id="addcart" type="button" onclick="addtocart()" value="Add To Cart" style="background-color: darkblue; color: white; border: 3px solid black; padding: 10px; margin: 5px;"></p>
+<div class="pos">
+<img src="Prew.jpg" width="223px" height="280px" class="img">
+<p class="supp">Pre Workout:<br><br>Price: $35<br><br>Pre Workout helps with increased energy, better focus and concentration, increases strength which will then improve muscle-building results.<br><br><input id="addcart" type="button" onclick="addtocart()" value="Add To Cart" style="background-color: darkblue; color: white; border: 3px solid black; padding: 10px; margin: 5px;"></p><br><a href="BUY.html"><span style="background-color: darkblue; color: white; border: 3px solid black; padding: 10px; margin: 5px;">Continue to Checkout</span></a>
+</div>
+</div>
+</div>
+<h1 id="main-heading">Added to Cart</h1>
+<script>
+  function addtocart(){
+    alert(document.getElementById("main-heading").innerHTML);
+  }
+</script>
+</body>
+</html>
